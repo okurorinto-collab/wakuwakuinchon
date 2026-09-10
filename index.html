@@ -19,7 +19,6 @@ body{font-family:'DM Sans',sans-serif;background:var(--bg);color:var(--text);lin
 .header-label{font-size:10px;letter-spacing:.18em;text-transform:uppercase;color:var(--red-mid);font-weight:600;margin-bottom:6px}
 .header-title{font-family:'Playfair Display',serif;font-size:32px;line-height:1.1;color:#fff;margin-bottom:4px}
 .header-sub{font-size:12px;color:#9aa5b4;letter-spacing:.03em}
-.draft-badge{display:inline-block;margin-top:10px;font-size:10px;font-weight:700;letter-spacing:.1em;background:rgba(255,255,255,.12);color:#fff;border:1px solid rgba(255,255,255,.25);padding:3px 10px;border-radius:20px}
 
 /* NAV */
 .date-nav{position:sticky;top:0;z-index:50;background:#fff;border-bottom:1px solid var(--border);display:flex;overflow-x:auto;scrollbar-width:none}
@@ -113,7 +112,6 @@ footer{text-align:center;padding:24px 16px;font-size:11px;color:var(--light)}
   <div class="header-label">Travel Itinerary</div>
   <div class="header-title">Seoul Trip 2026</div>
   <div class="header-sub">Sep 11 – Sep 14 · Incheon &amp; Myeongdong · 3泊4日</div>
-  <span class="draft-badge">仮プラン — 宿・スポットは要確定</span>
 </header>
 
 <nav class="date-nav">
@@ -143,8 +141,8 @@ footer{text-align:center;padding:24px 16px;font-size:11px;color:var(--light)}
 
 <div class="hotel-card">
   <div class="hotel-name">雲西駅のAirbnb</div>
-  <div class="hotel-area">9/11・9/12 の2泊</div>
-  <div class="hotel-area">空港鉄道 雲西（ウンソ）駅エリア。空港からA'REX一般列車で1駅・約5分、パラダイスシティは磁気浮上鉄道 or タクシーで10分</div>
+  <div class="hotel-area">9/11・9/12 の2泊 · セルフチェックイン</div>
+  <div class="hotel-area">雲西（ウンソ）駅 徒歩8分。空港からA'REX一般列車で2駅・約8分（タクシーなら10〜15分・約₩15,000〜20,000）。パラダイスシティはタクシーで10〜15分</div>
 </div>
 <div class="hotel-card">
   <div class="hotel-name">Hotel Firststay Myeongdong</div>
@@ -189,14 +187,14 @@ footer{text-align:center;padding:24px 16px;font-size:11px;color:var(--light)}
     </div>
     </div>
   </div>
-  <div class="transit"><div class="transit-pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12l7 7 7-7"/></svg>磁気浮上鉄道 or 無料シャトル / タクシー · 約10分</div></div>
+  <div class="transit"><div class="transit-pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12l7 7 7-7"/></svg>A'REX 一般列車 2駅・約8分 ＋ 徒歩8分 / タクシー 約10〜15分</div></div>
   <div class="event-card">
     <div class="event-body has-thumb">
       <img class="thumb" src="https://www.watg.com/wp-content/uploads/2021/10/131019_N35_website-1440x810.jpg" alt="空港エリアのホテルにチェックイン" loading="lazy" referrerpolicy="no-referrer" onerror="var d=document.createElement('div');d.className='thumb ph';this.replaceWith(d)">
       <div class="event-main">
-      <div class="event-top"><span class="event-time">24:15頃</span><span class="event-tag tag-hotel">HOTEL</span></div>
+      <div class="event-top"><span class="event-time">24:00〜24:30</span><span class="event-tag tag-hotel">HOTEL</span></div>
       <div class="event-name">雲西駅のAirbnbへ移動・チェックイン</div>
-      <div class="event-desc">空港鉄道 一般列車で雲西駅まで1駅・約5分。終電（23時台後半）に間に合わなければタクシーで約10分。深夜なのでセルフチェックインの手順は事前に確認。</div>
+      <div class="event-desc">空港鉄道 一般列車で雲西駅まで2駅・約8分、駅から徒歩8分。終電（23時台後半）に間に合わなければタクシーで約10〜15分（約₩15,000〜20,000）。セルフチェックインの手順は事前に確認。</div>
       <div class="tip">Airbnbのホストにチェックイン可能時間を事前確認。24時過ぎでも入れるか要チェック。</div>
       <div class="event-divider"></div>
       <a class="map-btn" href="https://maps.google.com/?q=Paradise+City+Incheon" target="_blank"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>マップ</a><button class="copy-btn" data-ko="파라다이스시티" onclick="copyKo(this)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>파라다이스시티</button>
@@ -219,49 +217,53 @@ footer{text-align:center;padding:24px 16px;font-size:11px;color:var(--light)}
     <span class="day-badge">DAY 2</span>
     <div>
       <div class="day-date">9月12日（土）</div>
-      <div class="day-title">移動ゼロ · 仁川で1日カジノ三昧</div>
+      <div class="day-title">仁川カジノ ＆ 午後は息抜きチル（A/B 2案）</div>
     </div>
   </div>
 
   <div class="event-card">
-    <div class="event-body">
-      <div class="event-top"><span class="event-time">朝〜昼</span><span class="event-tag tag-food">FOOD</span></div>
-      <div class="event-name">リゾート内でゆっくり朝ごはん</div>
-      <div class="event-desc">移動ゼロの日。ホテルのブッフェかリゾート内カフェで遅めの朝食。</div>
-      
+    <div class="event-body has-thumb">
+      <img class="thumb" src="https://www.konest.com/varimg/photogallery/Article_Photo/12007/big_399808.jpg" alt="パラダイスシティでカジノ集中タイム" loading="lazy" referrerpolicy="no-referrer" onerror="var d=document.createElement('div');d.className='thumb ph';this.replaceWith(d)">
+      <div class="event-main">
+      <div class="event-top"><span class="event-time">午前〜昼</span><span class="event-tag tag-spot">SPOT</span></div>
+      <div class="event-name">パラダイスシティでカジノ集中タイム</div>
+      <div class="event-desc">雲西駅からタクシー10〜15分。午前中からゲーム三昧。ランチはカジノ内レストラン or リゾートのプラザで。</div>
+      <div class="warn">カジノ入場はパスポート必須・19歳以上。飲み物は無料、酔いすぎ注意。</div>
+      <div class="event-divider"></div>
+      <a class="map-btn" href="https://maps.google.com/?q=Paradise+City+Incheon" target="_blank"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>マップ</a><button class="copy-btn" data-ko="파라다이스시티" onclick="copyKo(this)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>파라다이스시티</button></div>
+    </div>
+  </div>
+  <div class="transit"><div class="transit-pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12l7 7 7-7"/></svg>15:00 いったん外に出て息抜き（下の2案から気分で）</div></div>
+  <div class="event-card">
+    <div class="event-body has-thumb">
+      <img class="thumb" src="https://assets.hiltonstatic.com/hilton-asset-cache/image/upload/c_fill,w_800,h_800,q_70,f_auto,g_auto/Imagery/Property%20Photography/Hilton%20International/G/GMPIKHI/GMPIK_Exterior.jpg" alt="INSPIRE リゾートで近未来アート" loading="lazy" referrerpolicy="no-referrer" onerror="var d=document.createElement('div');d.className='thumb ph';this.replaceWith(d)">
+      <div class="event-main">
+      <div class="event-top"><span class="event-time">15:00〜18:00 · 案A</span><span class="event-tag tag-spot">SPOT</span></div>
+      <div class="event-name">INSPIRE リゾートで近未来アート</div>
+      <div class="event-desc">パラダイスシティから無料シャトル or タクシー約15分。全長150mのLED天井「オーロラ」で巨大クジラが泳ぐショーを見て、カフェで休憩。屋内なので天候に左右されない。</div>
+      <div class="event-divider"></div>
+      <a class="map-btn" href="https://maps.google.com/?q=Inspire+Entertainment+Resort+Incheon" target="_blank"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>マップ</a><button class="copy-btn" data-ko="인스파이어 엔터테인먼트 리조트" onclick="copyKo(this)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>인스파이어 엔터테인먼트 리조트</button></div>
     </div>
   </div>
   <div class="event-card">
     <div class="event-body has-thumb">
-      <img class="thumb" src="https://www.konest.com/varimg/photogallery/Article_Photo/12007/big_399808.jpg" alt="パラダイスシティ カジノ＆リゾート" loading="lazy" referrerpolicy="no-referrer" onerror="var d=document.createElement('div');d.className='thumb ph';this.replaceWith(d)">
+      <div class="thumb ph" title="画像URLを入れる"></div>
       <div class="event-main">
-      <div class="event-top"><span class="event-time">終日</span><span class="event-tag tag-spot">SPOT</span></div>
-      <div class="event-name">パラダイスシティ カジノ＆リゾート</div>
-      <div class="event-desc">外国人専用カジノ。テーブル・スロットのほか、アート作品が点在するリゾート内の散策、CIMER（スパ）やプラザで休憩も。</div>
-      <div class="warn">カジノ入場はパスポート必須・19歳以上。ドレスコードはゆるめだがサンダル短パンは避ける。飲み物は無料、酔いすぎ注意。</div>
+      <div class="event-top"><span class="event-time">15:00〜18:00 · 案B</span><span class="event-tag tag-spot">SPOT</span></div>
+      <div class="event-name">マシアンビーチで海沿いチル</div>
+      <div class="event-desc">タクシー約10分。干潟の海と夕日がきれいなビーチ。大型ベーカリーカフェが並んでいて、海を眺めながらコーヒー休憩。</div>
+      <div class="tip">9月中旬の日没は18:40頃。夕日狙いなら17時過ぎに着くのがベスト。</div>
       <div class="event-divider"></div>
-      <a class="map-btn" href="https://maps.google.com/?q=Paradise+City+Incheon" target="_blank"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>マップ</a><button class="copy-btn" data-ko="파라다이스시티" onclick="copyKo(this)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>파라다이스시티</button>
-    </div>
+      <a class="map-btn" href="https://maps.google.com/?q=Masian+Beach+Incheon" target="_blank"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>マップ</a><button class="copy-btn" data-ko="마시안해변" onclick="copyKo(this)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>마시안해변</button></div>
     </div>
   </div>
-  <div class="transit"><div class="transit-pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12l7 7 7-7"/></svg>タクシー · 約15分（インスパイアはT2寄り）</div></div>
-  <div class="event-card">
-    <div class="event-body has-thumb">
-      <img class="thumb" src="https://assets.hiltonstatic.com/hilton-asset-cache/image/upload/c_fill,w_800,h_800,q_70,f_auto,g_auto/Imagery/Property%20Photography/Hilton%20International/G/GMPIKHI/GMPIK_Exterior.jpg" alt="INSPIRE エンターテインメントリゾート" loading="lazy" referrerpolicy="no-referrer" onerror="var d=document.createElement('div');d.className='thumb ph';this.replaceWith(d)">
-      <div class="event-main">
-      <div class="event-top"><span class="event-time">夕方〜夜（任意）</span><span class="event-tag tag-night">NIGHT</span></div>
-      <div class="event-name">INSPIRE エンターテインメントリゾート</div>
-      <div class="event-desc">2023年開業の新しいリゾート。カジノに加えて巨大デジタルアート「オーロラ」が無料で見られる。パラダイスシティと雰囲気が違うので2軒目に。</div>
-      <div class="event-divider"></div>
-      <a class="map-btn" href="https://maps.google.com/?q=Inspire+Entertainment+Resort+Incheon" target="_blank"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>マップ</a><button class="copy-btn" data-ko="인스파이어 엔터테인먼트 리조트" onclick="copyKo(this)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>인스파이어 엔터테인먼트 리조트</button>
-    </div>
-    </div>
-  </div>
+  <div class="transit"><div class="transit-pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12l7 7 7-7"/></svg>タクシー · 約15分（雲西駅へ戻る）</div></div>
   <div class="event-card">
     <div class="event-body">
-      <div class="event-top"><span class="event-time">夜</span><span class="event-tag tag-hotel">HOTEL</span></div>
-      <div class="event-name">リゾート内で夕ごはん → 仁川泊</div>
-      <div class="event-desc">翌朝はソウル移動なので、荷造りは軽く済ませて就寝。</div>
+      <div class="event-top"><span class="event-time">18:30〜</span><span class="event-tag tag-food">FOOD</span></div>
+      <div class="event-name">雲西駅周辺でディナー → Airbnb泊</div>
+      <div class="event-desc">駅周辺の食堂でサムギョプサル or チキン。翌朝はソウル移動なので荷造りは軽く済ませる。</div>
+      <div class="tip">夜もカジノを続けたければ、そのまま居残りもOK。深夜でもタクシーは拾える。</div>
       
     </div>
   </div>
@@ -273,7 +275,7 @@ footer{text-align:center;padding:24px 16px;font-size:11px;color:var(--light)}
     <span class="day-badge">DAY 3</span>
     <div>
       <div class="day-date">9月13日（日）</div>
-      <div class="day-title">聖水 · 東大門 · 明洞カルビ → 激安服ハント</div>
+      <div class="day-title">聖水（ユッケ＆買い物） · 東大門（買い物＆タッカンマリ） · 明洞激安服</div>
     </div>
   </div>
 
@@ -281,11 +283,11 @@ footer{text-align:center;padding:24px 16px;font-size:11px;color:var(--light)}
     <div class="event-body">
       <div class="event-top"><span class="event-time">09:30</span><span class="event-tag tag-hotel">HOTEL</span></div>
       <div class="event-name">雲西駅のAirbnbチェックアウト → 空港鉄道でソウルへ</div>
-      <div class="event-desc">雲西駅からA'REX一般列車でソウル駅（約50分）。ソウル駅からホテルまでは徒歩約15分 or タクシー5分（1号線で市庁駅1駅でも可）。</div>
+      <div class="event-desc">雲西駅からA'REX一般列車でソウル駅（約45分）。ソウル駅からホテルまでは徒歩約15分 or タクシー5分。</div>
       
     </div>
   </div>
-  <div class="transit"><div class="transit-pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12l7 7 7-7"/></svg>A'REX ＋ 徒歩 or タクシー · 約1時間10分</div></div>
+  <div class="transit"><div class="transit-pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12l7 7 7-7"/></svg>A'REX ＋ 徒歩 or タクシー · 約1時間</div></div>
   <div class="event-card">
     <div class="event-body">
       <div class="event-top"><span class="event-time">10:45</span><span class="event-tag tag-hotel">HOTEL</span></div>
@@ -297,11 +299,24 @@ footer{text-align:center;padding:24px 16px;font-size:11px;color:var(--light)}
   <div class="transit"><div class="transit-pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12l7 7 7-7"/></svg>徒歩10分で乙支路入口 → 地下鉄2号線で聖水 · 約25分</div></div>
   <div class="event-card">
     <div class="event-body has-thumb">
+      <div class="thumb ph" title="画像URLを入れる"></div>
+      <div class="event-main">
+      <div class="event-top"><span class="event-time">11:30 発券 → 順番が来たら</span><span class="event-tag tag-food">FOOD</span></div>
+      <div class="event-name">ランチ · ヌンドンミナリ 聖水店</div>
+      <div class="event-desc">シャキシャキのセリ（ミナリ）と韓牛ユッケが乗ったユッケビビンバの名店。ソウルの本命ユッケはここで。</div>
+      <div class="warn"><b>混雑回避テク：</b>ソウル指折りの人気店で、昼は1時間以上待つことも。聖水駅に着いたら<b>真っ先にここへ行って店頭の CatchTable 端末で発券</b>。待ち時間に隣のジャヨンド塩パンや周辺のセレクトショップを回れば、時間を無駄にせず全部拾える。</div>
+      <div class="event-divider"></div>
+      <a class="map-btn" href="https://maps.google.com/?q=Nundong+Minari+Seongsu" target="_blank"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>マップ</a><button class="copy-btn" data-ko="눈동미나리 성수점" onclick="copyKo(this)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>눈동미나리 성수점</button></div>
+    </div>
+  </div>
+  <div class="transit"><div class="transit-pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12l7 7 7-7"/></svg>徒歩 · 約5分</div></div>
+  <div class="event-card">
+    <div class="event-body has-thumb">
       <img class="thumb" src="https://i0.wp.com/mytinylibrary.com/wp-content/uploads/2025/11/img_3735.jpg?fit=768%2C1365&ssl=1" alt="聖水 · ジャヨンド塩パン" loading="lazy" referrerpolicy="no-referrer" onerror="var d=document.createElement('div');d.className='thumb ph';this.replaceWith(d)">
       <div class="event-main">
-      <div class="event-top"><span class="event-time">11:15〜11:45</span><span class="event-tag tag-food">FOOD</span></div>
-      <div class="event-name">聖水 · ジャヨンド塩パン</div>
-      <div class="event-desc">聖水駅3番出口すぐの塩パン専門店。焼きたてをテイクアウトして食べ歩き。</div>
+      <div class="event-top"><span class="event-time">待ち時間</span><span class="event-tag tag-food">FOOD</span></div>
+      <div class="event-name">（待ち時間に）聖水 · ジャヨンド塩パン</div>
+      <div class="event-desc">聖水駅3番出口すぐの塩パン専門店。ヌンドンミナリの順番待ち中に焼きたてをテイクアウト。</div>
       <div class="event-divider"></div>
       <a class="map-btn" href="https://maps.google.com/?q=자연도소금빵+성수" target="_blank"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>マップ</a><button class="copy-btn" data-ko="자연도소금빵" onclick="copyKo(this)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>자연도소금빵</button></div>
     </div>
@@ -311,21 +326,23 @@ footer{text-align:center;padding:24px 16px;font-size:11px;color:var(--light)}
     <div class="event-body has-thumb">
       <img class="thumb" src="https://storage.heypop.kr/assets/2025/08/21022212/20250820_172210-house1.jpg" alt="HAUS NOWHERE SEOUL" loading="lazy" referrerpolicy="no-referrer" onerror="var d=document.createElement('div');d.className='thumb ph';this.replaceWith(d)">
       <div class="event-main">
-      <div class="event-top"><span class="event-time">11:45〜13:15</span><span class="event-tag tag-spot">SPOT</span></div>
+      <div class="event-top"><span class="event-time">12:45〜14:00</span><span class="event-tag tag-spot">SPOT</span></div>
       <div class="event-name">HAUS NOWHERE SEOUL</div>
-      <div class="event-desc">GENTLE MONSTER・TAMBURINS・NUDAKE の巨大アート空間。ランチはNUDAKEで。</div>
+      <div class="event-desc">GENTLE MONSTER・TAMBURINS・NUDAKE の世界観を満喫。1階のキオスクでNUDAKEティーハウスの予約もできる。</div>
       <div class="event-divider"></div>
       <a class="map-btn" href="https://maps.google.com/?q=HAUS+NOWHERE+SEOUL" target="_blank"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>マップ</a><button class="copy-btn" data-ko="하우스 노웨어 서울" onclick="copyKo(this)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>하우스 노웨어 서울</button></div>
     </div>
   </div>
-  <div class="transit"><div class="transit-pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12l7 7 7-7"/></svg>徒歩</div></div>
+  <div class="transit"><div class="transit-pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12l7 7 7-7"/></svg>徒歩 · 数分</div></div>
   <div class="event-card">
-    <div class="event-body">
-      <div class="event-top"><span class="event-time">13:15〜14:30</span><span class="event-tag tag-spot">SPOT</span></div>
-      <div class="event-name">聖水カフェ通り・セレクトショップ散策</div>
-      <div class="event-desc">연무장길（ヨンムジャンキル）を中心にカフェとセレクトショップをぶらぶら。ポップアップも多いエリアなので、その日の出会い次第。</div>
+    <div class="event-body has-thumb">
+      <div class="thumb ph" title="画像URLを入れる"></div>
+      <div class="event-main">
+      <div class="event-top"><span class="event-time">14:00〜14:30</span><span class="event-tag tag-shop">SHOP</span></div>
+      <div class="event-name">RAIN REPORT 聖水 ＆ カフェ通り</div>
+      <div class="event-desc">韓国発ライフスタイル・コスメブランドの旗艦店。ヘアオイル・ハンドクリームが定番。余った時間で연무장길をぶらぶら。</div>
       <div class="event-divider"></div>
-      <a class="map-btn" href="https://maps.google.com/?q=Yeonmujang-gil+Seongsu" target="_blank"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>マップ</a><button class="copy-btn" data-ko="연무장길" onclick="copyKo(this)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>연무장길</button>
+      <a class="map-btn" href="https://maps.google.com/?q=RAIN+REPORT+Seongsu" target="_blank"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>マップ</a><button class="copy-btn" data-ko="레인리포트 성수" onclick="copyKo(this)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>레인리포트 성수</button></div>
     </div>
   </div>
   <div class="transit"><div class="transit-pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12l7 7 7-7"/></svg>地下鉄2号線 · 聖水 → 東大門歴史文化公園 約10分</div></div>
@@ -340,36 +357,38 @@ footer{text-align:center;padding:24px 16px;font-size:11px;color:var(--light)}
       <a class="map-btn" href="https://maps.google.com/?q=DUNDUN+Dongdaemun" target="_blank"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>マップ</a><button class="copy-btn" data-ko="던던 동대문" onclick="copyKo(this)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>던던 동대문</button></div>
     </div>
   </div>
-  <div class="transit"><div class="transit-pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12l7 7 7-7"/></svg>地下鉄2号線 · 2駅（乙支路入口）</div></div>
+  <div class="transit"><div class="transit-pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12l7 7 7-7"/></svg>徒歩 · 約10分（タッカンマリ横丁へ）</div></div>
   <div class="event-card">
     <div class="event-body has-thumb">
-      <img class="thumb" src="https://d12zq4w4guyljn.cloudfront.net/750_750_20260508092053_photo1_f8c1a4a4b849.webp" alt="チョンギワタウン 乙支路店" loading="lazy" referrerpolicy="no-referrer" onerror="var d=document.createElement('div');d.className='thumb ph';this.replaceWith(d)">
+      <div class="thumb ph" title="画像URLを入れる"></div>
       <div class="event-main">
       <div class="event-top"><span class="event-time">18:00〜19:30</span><span class="event-tag tag-food">FOOD</span></div>
-      <div class="event-name">チョンギワタウン 乙支路店</div>
-      <div class="event-desc">アメリカンコリアンタウン風の店内で、名物の水原王カルビ。₩20,000〜70,000。予約推奨。</div>
+      <div class="event-name">陳玉華ハルメ元祖タッカンマリ</div>
+      <div class="event-desc">鶏一羽を丸ごと煮込んだ濃厚スープ。ニンニクとモチモチのトックを入れて、シメはカルグクス（うどん）。行列なら隣の「明洞タッカンマリ本店」でも同じくらい美味しい。</div>
+      <div class="tip">タレは醤油＋酢＋カラシ＋タデギ（薬味）を自分で調合。鶏を食べ終わった後のシメ麺まで計算して注文。</div>
       <div class="event-divider"></div>
-      <a class="map-btn" href="https://maps.google.com/?q=Cheonggiwa+Town+Euljiro" target="_blank"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>マップ</a><button class="copy-btn" data-ko="청기와타운 을지로점" onclick="copyKo(this)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>청기와타운 을지로점</button></div>
+      <a class="map-btn" href="https://maps.google.com/?q=Jin+Ok+Hwa+Halmae+Wonjo+Dakhanmari" target="_blank"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>マップ</a><button class="copy-btn" data-ko="진옥화할매원조닭한마리" onclick="copyKo(this)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>진옥화할매원조닭한마리</button><br style="margin-bottom:6px"><a class="map-btn" href="https://maps.google.com/?q=Myeongdong+Dakhanmari+Dongdaemun" target="_blank"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>マップ</a><button class="copy-btn" data-ko="명동닭한마리 본점" onclick="copyKo(this)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>명동닭한마리 본점</button></div>
     </div>
   </div>
-  <div class="transit"><div class="transit-pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12l7 7 7-7"/></svg>徒歩 · 約10分</div></div>
+  <div class="transit"><div class="transit-pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12l7 7 7-7"/></svg>地下鉄4号線 · 東大門 → 明洞 約5分</div></div>
   <div class="event-card">
     <div class="event-body has-thumb">
       <img class="thumb" src="https://commons.wikimedia.org/wiki/Special:FilePath/Myeongdong2.JPG?width=600" alt="夜の明洞プチプラ・激安服ハント" loading="lazy" referrerpolicy="no-referrer" onerror="var d=document.createElement('div');d.className='thumb ph';this.replaceWith(d)">
       <div class="event-main">
-      <div class="event-top"><span class="event-time">19:30〜21:30</span><span class="event-tag tag-shop">SHOP</span></div>
+      <div class="event-top"><span class="event-time">20:00〜22:00</span><span class="event-tag tag-shop">SHOP</span></div>
       <div class="event-name">夜の明洞プチプラ・激安服ハント</div>
       <div class="event-desc">M PLAY GROUND → SPAO → 8SECONDS。人気韓国SPAをまとめてチェック。</div>
-      <div class="tip">大半が22:00〜23:00閉店。ホテルチェックインは買い物のあとでOK（荷物は預けてある）。</div>
+      <div class="tip">大半が22:00〜23:00閉店。ホテルのフロントも23:00までなので、22:00には切り上げる。</div>
       <div class="event-divider"></div>
       <a class="map-btn" href="https://maps.google.com/?q=M+Playground+Myeongdong" target="_blank"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>マップ</a><button class="copy-btn" data-ko="엠플레이그라운드 명동점" onclick="copyKo(this)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>엠플레이그라운드 명동점</button><br style="margin-bottom:6px"><a class="map-btn" href="https://maps.google.com/?q=SPAO+Myeongdong" target="_blank"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>マップ</a><button class="copy-btn" data-ko="스파오 명동점" onclick="copyKo(this)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>스파오 명동점</button><br style="margin-bottom:6px"><a class="map-btn" href="https://maps.google.com/?q=8seconds+Myeongdong" target="_blank"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>マップ</a><button class="copy-btn" data-ko="에잇세컨즈 명동점" onclick="copyKo(this)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>에잇세컨즈 명동점</button></div>
     </div>
   </div>
   <div class="event-card">
     <div class="event-body">
-      <div class="event-top"><span class="event-time">21:30〜</span><span class="event-tag tag-hotel">HOTEL</span></div>
+      <div class="event-top"><span class="event-time">22:00〜</span><span class="event-tag tag-hotel">HOTEL</span></div>
       <div class="event-name">Hotel Firststay Myeongdong にチェックイン</div>
-      <div class="event-desc">明洞の中心からホテルまで徒歩10〜12分。フロントは23:00までなので、それより遅くなりそうなら一度チェックインしてから出直す。翌朝は10:00チェックアウト。</div>
+      <div class="event-desc">明洞の中心からホテルまで徒歩10〜12分。フロントは23:00まで。翌朝は10:00チェックアウト。</div>
+      <div class="tip"><b>寝る前にやること：翌日 16:15 前後の A'REX 直通列車を予約</b><br>ソウル駅 → 仁川空港T1（約43分・全席指定）。夕方の空港行きは満席になることがあるので、Klook / KKday / A'REX公式サイトで指定席を確保しておくと安心。翌朝ソウル駅の都心空港ターミナルで搭乗手続きをするときに、このチケットが必要になる。</div>
       
     </div>
   </div>
@@ -381,49 +400,49 @@ footer{text-align:center;padding:24px 16px;font-size:11px;color:var(--light)}
     <span class="day-badge">DAY 4</span>
     <div>
       <div class="day-date">9月14日（月）</div>
-      <div class="day-title">明洞で靴 · 広蔵市場ユッケ · 漢南洞でRR本命買い · 帰国</div>
+      <div class="day-title">ソウル駅で先に搭乗手続き · ザ・現代ソウル · 漢南洞RR · 帰国</div>
     </div>
   </div>
-  <div class="section-warn">出発 20:10 なので 17:30 には仁川空港 T1 にいたい。漢南洞は 15:30 に切り上げ、ホテルを 16:00 前に出る。</div>
+  <div class="section-warn">出発 20:10。朝のうちにソウル駅で搭乗手続きを済ませるので、ホテルに戻る必要なし。漢南洞 15:30 発 → 16:15 ソウル駅発 A'REX → 17:00 空港着。</div>
 
   <div class="event-card">
     <div class="event-body">
       <div class="event-top"><span class="event-time">10:00</span><span class="event-tag tag-hotel">HOTEL</span></div>
-      <div class="event-name">チェックアウト・荷物を預ける</div>
-      <div class="event-desc">スーツケースはフロントに預けて手ぶらで。</div>
+      <div class="event-name">チェックアウト → スーツケースを持ってソウル駅へ</div>
+      <div class="event-desc">今日はホテルに荷物を預けない。スーツケースごとタクシーでソウル駅へ（約5分）。</div>
       
     </div>
   </div>
+  <div class="transit"><div class="transit-pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12l7 7 7-7"/></svg>タクシー · 約5分</div></div>
   <div class="event-card">
-    <div class="event-body has-thumb">
-      <img class="thumb" src="https://www.chaakan.co.kr/web/upload/share-image-1-cbd914282cc42075dbe9394a3832d674.jpg" alt="明洞で靴＆買い物 · チャカン靴" loading="lazy" referrerpolicy="no-referrer" onerror="var d=document.createElement('div');d.className='thumb ph';this.replaceWith(d)">
-      <div class="event-main">
-      <div class="event-top"><span class="event-time">10:30〜11:30</span><span class="event-tag tag-shop">SHOP</span></div>
-      <div class="event-name">明洞で靴＆買い物 · チャカン靴</div>
-      <div class="event-desc">プチプラ靴ショップ「チャカン靴」でパンプス・ブーツ・スニーカーをチェック（₩10,000台から・サイズは小さめ表記）。買い残しのお土産もここで。</div>
+    <div class="event-body">
+      <div class="event-top"><span class="event-time">10:15〜10:45</span><span class="event-tag tag-flight">FLIGHT</span></div>
+      <div class="event-name">ソウル駅 都心空港ターミナルで事前搭乗手続き</div>
+      <div class="event-desc">ソウル駅 地下2階。ティーウェイ航空は対象なので、ここで <b>チェックイン → スーツケース預け → 出国審査</b> まで完了できる。以降は完全に手ぶら。仁川空港では一般の列に並ばず、専用口（優先レーン）から保安検査へ。</div>
+      <div class="warn">利用条件：<b>A'REX直通列車のチケットが必要</b>（先に買う）。出発3時間前（17:10）までに手続き完了。Tax Refund したい商品は預け荷物に入れず手荷物へ。今日The Hyundai・漢南洞で買う物は手荷物で持ち帰る前提で。</div>
       <div class="event-divider"></div>
-      <a class="map-btn" href="https://maps.google.com/?q=Chakan+Shoes+Myeongdong" target="_blank"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>マップ</a><button class="copy-btn" data-ko="착한구두 명동점" onclick="copyKo(this)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>착한구두 명동점</button></div>
+      <a class="map-btn" href="https://maps.google.com/?q=Seoul+Station+City+Airport+Terminal" target="_blank"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>マップ</a><button class="copy-btn" data-ko="서울역 도심공항터미널" onclick="copyKo(this)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>서울역 도심공항터미널</button>
     </div>
   </div>
-  <div class="transit"><div class="transit-pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12l7 7 7-7"/></svg>地下鉄1号線 · 市庁 → 鍾路5街 約10分</div></div>
+  <div class="transit"><div class="transit-pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12l7 7 7-7"/></svg>タクシー · 約15分（ソウル駅 → 汝矣島）</div></div>
   <div class="event-card">
     <div class="event-body has-thumb">
-      <img class="thumb" src="https://commons.wikimedia.org/wiki/Special:FilePath/Gwangjang_Market%2C_Seoul_01.jpg?width=600" alt="広蔵市場 · プチョンユッケ本店" loading="lazy" referrerpolicy="no-referrer" onerror="var d=document.createElement('div');d.className='thumb ph';this.replaceWith(d)">
+      <div class="thumb ph" title="画像URLを入れる"></div>
       <div class="event-main">
-      <div class="event-top"><span class="event-time">11:45〜13:00</span><span class="event-tag tag-food">FOOD</span></div>
-      <div class="event-name">広蔵市場 · プチョンユッケ本店</div>
-      <div class="event-desc">ミシュランも認めた韓牛ユッケ＆ユッケビビンバ。行列なら並びの「兄弟ユッケ」も同レベルで美味しい。</div>
-      <div class="tip">12時前に着けるとまだ回転が早い。ピンデトクや麻薬キンパも忘れずに。</div>
+      <div class="event-top"><span class="event-time">11:00〜12:45</span><span class="event-tag tag-shop">SHOP</span></div>
+      <div class="event-name">The Hyundai Seoul（ザ・現代ソウル）</div>
+      <div class="event-desc">B2Fの最先端韓国ブランド・雑貨・カフェを約1時間45分じっくり。5Fの屋内庭園「サウンズフォレスト」も一見の価値あり。</div>
+      <div class="tip">B2Fが本命フロア。ポップアップは週替わりなので当日のフロアマップをチェック。</div>
       <div class="event-divider"></div>
-      <a class="map-btn" href="https://maps.google.com/?q=Bucheon+Yukhoe+Gwangjang+Market" target="_blank"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>マップ</a><button class="copy-btn" data-ko="부촌육회 본점" onclick="copyKo(this)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>부촌육회 본점</button><br style="margin-bottom:6px"><a class="map-btn" href="https://maps.google.com/?q=Hyungje+Yukhoe+Gwangjang+Market" target="_blank"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>マップ</a><button class="copy-btn" data-ko="형제육회" onclick="copyKo(this)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>형제육회</button></div>
+      <a class="map-btn" href="https://maps.google.com/?q=The+Hyundai+Seoul+Yeouido" target="_blank"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>マップ</a><button class="copy-btn" data-ko="더현대 서울" onclick="copyKo(this)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>더현대 서울</button></div>
     </div>
   </div>
-  <div class="transit"><div class="transit-pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12l7 7 7-7"/></svg>タクシー · 約10〜15分（漢南洞へ）</div></div>
+  <div class="transit"><div class="transit-pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12l7 7 7-7"/></svg>タクシー · 約15分（漢江を渡って漢南洞へ直行）</div></div>
   <div class="event-card">
     <div class="event-body has-thumb">
       <img class="thumb" src="https://img1.daumcdn.net/thumb/S1200x630/?fname=https://t1.daumcdn.net/news/202411/27/mk/20241127162110091zual.jpg" alt="Rest & Recreation 漢南店" loading="lazy" referrerpolicy="no-referrer" onerror="var d=document.createElement('div');d.className='thumb ph';this.replaceWith(d)">
       <div class="event-main">
-      <div class="event-top"><span class="event-time">13:30〜14:30</span><span class="event-tag tag-shop">SHOP</span></div>
+      <div class="event-top"><span class="event-time">13:15〜14:30</span><span class="event-tag tag-shop">SHOP</span></div>
       <div class="event-name">Rest & Recreation 漢南店</div>
       <div class="event-desc">大本命。RRの旗艦店で本気の買い物。アパレル・キャップ・RRビューティーまで。</div>
       <div class="event-divider"></div>
@@ -433,30 +452,20 @@ footer{text-align:center;padding:24px 16px;font-size:11px;color:var(--light)}
   <div class="transit"><div class="transit-pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12l7 7 7-7"/></svg>徒歩 · 数分</div></div>
   <div class="event-card">
     <div class="event-body">
-      <div class="event-top"><span class="event-time">14:30〜15:10</span><span class="event-tag tag-shop">SHOP</span></div>
-      <div class="event-name">Mardi Mercredi ＆ Nonfiction</div>
-      <div class="event-desc">漢南洞の人気ブランド2軒。Mardi Mercrediはお花ロゴのTシャツ・スウェット、Nonfictionはハンドクリームと香水がお土産に◎</div>
+      <div class="event-top"><span class="event-time">14:30〜15:30</span><span class="event-tag tag-food">FOOD</span></div>
+      <div class="event-name">Mardi Mercredi ＆ 漢南洞カフェで軽食</div>
+      <div class="event-desc">お花ロゴのMardi Mercrediをチェックしたら、近くのカフェで遅めランチ兼休憩。Tartine Bakery 漢南店やNonfictionも徒歩圏。</div>
+      <div class="warn">15:30には切り上げてタクシーを呼ぶ。漢南→ソウル駅は約15分。</div>
       <div class="event-divider"></div>
-      <a class="map-btn" href="https://maps.google.com/?q=Mardi+Mercredi+Hannam" target="_blank"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>マップ</a><button class="copy-btn" data-ko="마르디 메크르디 한남" onclick="copyKo(this)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>마르디 메크르디 한남</button><br style="margin-bottom:6px"><a class="map-btn" href="https://maps.google.com/?q=Nonfiction+Hannam" target="_blank"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>マップ</a><button class="copy-btn" data-ko="논픽션 한남" onclick="copyKo(this)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>논픽션 한남</button>
+      <a class="map-btn" href="https://maps.google.com/?q=Mardi+Mercredi+Hannam" target="_blank"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>マップ</a><button class="copy-btn" data-ko="마르디 메크르디 한남" onclick="copyKo(this)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>마르디 메크르디 한남</button><br style="margin-bottom:6px"><a class="map-btn" href="https://maps.google.com/?q=Tartine+Bakery+Hannam" target="_blank"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>マップ</a><button class="copy-btn" data-ko="타르틴 베이커리 한남" onclick="copyKo(this)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>타르틴 베이커리 한남</button><br style="margin-bottom:6px"><a class="map-btn" href="https://maps.google.com/?q=Nonfiction+Hannam" target="_blank"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>マップ</a><button class="copy-btn" data-ko="논픽션 한남" onclick="copyKo(this)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>논픽션 한남</button>
     </div>
   </div>
-  <div class="transit"><div class="transit-pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12l7 7 7-7"/></svg>徒歩 · 数分</div></div>
+  <div class="transit"><div class="transit-pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12l7 7 7-7"/></svg>タクシー · 約15分（漢南 → ソウル駅）</div></div>
   <div class="event-card">
     <div class="event-body">
-      <div class="event-top"><span class="event-time">15:10〜15:30</span><span class="event-tag tag-food">FOOD</span></div>
-      <div class="event-name">Tartine Bakery 漢南店で休憩・テイクアウト</div>
-      <div class="event-desc">サンフランシスコ発のベーカリー。クロワッサンやモーニングバンを空港のおやつにテイクアウト。</div>
-      <div class="warn">15:30には切り上げてタクシーを呼ぶ。漢南→明洞は約10分、渋滞なら15分。</div>
-      <div class="event-divider"></div>
-      <a class="map-btn" href="https://maps.google.com/?q=Tartine+Bakery+Hannam" target="_blank"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>マップ</a><button class="copy-btn" data-ko="타르틴 베이커리 한남" onclick="copyKo(this)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>타르틴 베이커리 한남</button>
-    </div>
-  </div>
-  <div class="transit"><div class="transit-pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12l7 7 7-7"/></svg>タクシー · 約15分（漢南 → ホテル）</div></div>
-  <div class="event-card">
-    <div class="event-body">
-      <div class="event-top"><span class="event-time">15:45</span></div>
-      <div class="event-name">Hotel Firststay で荷物ピックアップ → ソウル駅</div>
-      <div class="event-desc">ホテルからソウル駅は約1.1km。スーツケースがあるのでタクシーで5分がラク（徒歩なら15分）。ソウル駅でA'REX直通列車のチケットを購入。</div>
+      <div class="event-top"><span class="event-time">15:50</span></div>
+      <div class="event-name">ソウル駅 → A'REX直通列車ホームへ</div>
+      <div class="event-desc">荷物はもう預けてあるので手ぶら。朝買ったチケットで直通列車ホームへ。時間があれば駅ナカでコーヒー。</div>
       
     </div>
   </div>
@@ -465,9 +474,9 @@ footer{text-align:center;padding:24px 16px;font-size:11px;color:var(--light)}
     <div class="event-body has-thumb">
       <img class="thumb" src="https://commons.wikimedia.org/wiki/Special:FilePath/Incheon_International_Airport_Terminal_1_Departure.jpg?width=600" alt="仁川国際空港 T1 着" loading="lazy" referrerpolicy="no-referrer" onerror="var d=document.createElement('div');d.className='thumb ph';this.replaceWith(d)">
       <div class="event-main">
-      <div class="event-top"><span class="event-time">17:30</span><span class="event-tag tag-flight">FLIGHT</span></div>
+      <div class="event-top"><span class="event-time">17:00</span><span class="event-tag tag-flight">FLIGHT</span></div>
       <div class="event-name">仁川国際空港 T1 着</div>
-      <div class="event-desc">ティーウェイ航空カウンターでチェックイン・手荷物預け・保安検査・免税手続き。</div>
+      <div class="event-desc">チェックイン・荷物預けは朝に済んでいるので、都心空港ターミナル利用者用の<b>専用口から保安検査</b>へ直行。Tax Refund（手荷物分）→ 免税店でラストショッピングの時間がたっぷり。</div>
       <div class="flight-detail">
         <div class="fd-col"><div class="fd-label">Departure</div><div class="fd-route">ICN T1</div><div class="fd-time">20:10 · TW249</div></div>
         <div class="fd-col"><div class="fd-label">Arrival</div><div class="fd-route">NRT T2</div><div class="fd-time">22:40 · 2時間30分</div></div>
@@ -489,7 +498,7 @@ footer{text-align:center;padding:24px 16px;font-size:11px;color:var(--light)}
 
 </main>
 
-<footer>Seoul わくわく旅行 2026 · 仮プラン v0.1</footer>
+<footer>Seoul わくわく旅行 2026 · 確定版</footer>
 
 <script>
 function copyKo(btn){
